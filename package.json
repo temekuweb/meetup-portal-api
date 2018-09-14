@@ -1,0 +1,55 @@
+{
+  "name": "meetup-portal-api",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "Nick Olsen",
+    "email": "yepistemic@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "engines": {
+    "node": "^8.0.0",
+    "yarn": ">= 0.18.0"
+  },
+  "scripts": {
+    "test": "yarn run eslint && yarn run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "dependencies": {
+    "@feathersjs/configuration": "^2.0.1",
+    "@feathersjs/errors": "^3.3.1",
+    "@feathersjs/express": "^1.2.4",
+    "@feathersjs/feathers": "^3.1.7",
+    "compression": "^1.7.3",
+    "cors": "^2.8.4",
+    "feathers-mongodb": "^3.3.0",
+    "feathers-mongoose": "^6.1.4",
+    "feathers-swagger": "^0.7.2",
+    "helmet": "^3.13.0",
+    "mongodb": "^3.1.1",
+    "mongoose": "^5.2.7",
+    "mongoose-schema-jsonschema": "^1.1.15",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
