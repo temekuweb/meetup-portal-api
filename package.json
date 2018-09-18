@@ -24,6 +24,7 @@
   "scripts": {
     "test": "yarn run eslint && yarn run mocha",
     "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "format": "prettier --write --single-quote --print-width=80 --tab-width=2 \"src/**/*.js\"",
     "dev": "nodemon src/",
     "start": "node src/",
     "mocha": "mocha test/ --recursive --exit"

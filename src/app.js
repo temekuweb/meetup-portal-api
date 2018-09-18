@@ -10,7 +10,6 @@ const configuration = require('@feathersjs/configuration');
 const express = require('@feathersjs/express');
 const swagger = require('feathers-swagger');
 
-
 const middleware = require('./middleware');
 const services = require('./services');
 const appHooks = require('./app.hooks');
@@ -36,21 +35,20 @@ app.use('/', express.static(app.get('public')));
 
 // Set up Plugins and providers
 app.configure(express.rest());
-app.configure(swagger({
+app.configure(
+  swagger({
     docsPath: '/docs',
     uiIndex: true,
     info: {
       title: 'A test',
       description: 'A description'
     }
-}));
-
+  })
+);
 
 app.configure(mongoose);
 
-
 app.configure(mongodb);
-
 
 // Configure other middleware (see `middleware/index.js`)
 app.configure(middleware);
