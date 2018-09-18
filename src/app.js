@@ -8,7 +8,6 @@ const logger = require('./logger');
 const feathers = require('@feathersjs/feathers');
 const configuration = require('@feathersjs/configuration');
 const express = require('@feathersjs/express');
-const swagger = require('feathers-swagger');
 
 const middleware = require('./middleware');
 const services = require('./services');
@@ -35,16 +34,6 @@ app.use('/', express.static(app.get('public')));
 
 // Set up Plugins and providers
 app.configure(express.rest());
-app.configure(
-  swagger({
-    docsPath: '/docs',
-    uiIndex: true,
-    info: {
-      title: 'A test',
-      description: 'A description'
-    }
-  })
-);
 
 app.configure(mongoose);
 

@@ -38,7 +38,6 @@
     "cors": "^2.8.4",
     "feathers-mongodb": "^3.3.0",
     "feathers-mongoose": "^6.1.4",
-    "feathers-swagger": "^0.7.2",
     "helmet": "^3.13.0",
     "mongodb": "^3.1.1",
     "mongoose": "^5.2.7",
