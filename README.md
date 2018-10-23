@@ -38,3 +38,17 @@ docker build -t twt/mpp-api .
 docker run --link meetuppp-mongo:mongo twt/mpp-api
 ```
 
+## Docker Compose Mode
+
+To run in docker-compose
+
+```
+docker-compose build
+docker-compose up
+```
+
+To shut down
+
+```
+docker-compose down
+```
