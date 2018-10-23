@@ -3,7 +3,7 @@
 // See http://mongoosejs.com/docs/models.html
 // for more of what you can do here.
 module.exports = function(app) {
-  const mongooseClient = app.get("mongooseClient");
+  const mongooseClient = app.get('mongooseClient');
   const { Schema } = mongooseClient;
   const profile = new Schema(
     {
@@ -14,5 +14,5 @@ module.exports = function(app) {
     }
   );
 
-  return mongooseClient.model("profile", profile);
+  return mongooseClient.model('profile', profile);
 };

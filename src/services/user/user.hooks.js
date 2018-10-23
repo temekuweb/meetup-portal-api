@@ -2,7 +2,7 @@
  *  create a new profile, and assign it's id to context.data.profile
  */
 const createUserProfile = async context => {
-  const profileService = context.app.service("profile");
+  const profileService = context.app.service('profile');
   const { username } = context.data;
 
   const newProfile = await profileService.create({ username });
@@ -11,7 +11,7 @@ const createUserProfile = async context => {
 };
 
 const removeUserProfile = async context => {
-  const profileService = context.app.service("profile");
+  const profileService = context.app.service('profile');
   const { profile: profileId } = context.result;
 
   await profileService.remove(profileId);
