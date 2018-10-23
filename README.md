@@ -1,4 +1,5 @@
 # Meetup Portal API
+[![Build Status](https://travis-ci.org/temekuweb/meetup-portal-api.svg?branch=master)](https://travis-ci.org/temekuweb/meetup-portal-api)
 
 ## Getting Started
 
