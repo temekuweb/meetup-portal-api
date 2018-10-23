@@ -1,4 +1,5 @@
 {
   "host": "meetup-portal-api-app.feathersjs.com",
-  "port": "PORT"
+  "port": "PORT",
+  "mongodb": "MONGO_URL"
 }
