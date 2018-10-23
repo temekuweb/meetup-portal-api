@@ -1,0 +1,13 @@
+version: '3'
+services:
+  mpp-api:
+    build: .
+    ports:
+    - 3030:3030
+    links:
+    - mongo
+    depends_on:
+    - mongo
+  mongo:
+    image: mongo:latest
+    container_name: "meetuppp-mongo"
