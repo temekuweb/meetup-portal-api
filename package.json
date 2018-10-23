@@ -21,6 +21,9 @@
     "node": "^8.0.0",
     "yarn": ">= 0.18.0"
   },
+  "now": {
+    "alias": "mpp-api"
+  },
   "scripts": {
     "test": "yarn run eslint && yarn run mocha",
     "eslint": "eslint src/. test/. --config .eslintrc.json",
