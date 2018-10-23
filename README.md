@@ -22,3 +22,19 @@ in your favorite browser
 ```
 
 There should be documentation running at http://localhost:3030/docs.
+
+## Docker
+
+Run MongoDB using Docker
+```
+docker run --name meetuppp-mongo -d -p 27017:27017 mongo
+```
+
+
+Build docker image
+
+```
+docker build -t twt/mpp-api .
+docker run --link meetuppp-mongo:mongo twt/mpp-api
+```
+
