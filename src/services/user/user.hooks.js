@@ -1,6 +1,10 @@
 /*
  *  create a new profile, and assign it's id to context.data.profile
  */
+const {
+  hashPassword, protect
+} = require('@feathersjs/authentication-local').hooks;
+
 const createUserProfile = async context => {
   const profileService = context.app.service('profile');
   const { username } = context.data;
@@ -23,7 +27,7 @@ module.exports = {
     all: [],
     find: [],
     get: [],
-    create: [createUserProfile],
+    create: [hashPassword()],
     update: [],
     patch: [],
     remove: []

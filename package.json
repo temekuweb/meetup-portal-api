@@ -18,7 +18,7 @@
     "test": "test/"
   },
   "engines": {
-    "node": "^8.0.0",
+    "node": "^11.0.0",
     "yarn": ">= 0.18.0"
   },
   "scripts": {
@@ -30,6 +30,9 @@
     "mocha": "mocha test/ --recursive --exit"
   },
   "dependencies": {
+    "@feathersjs/authentication": "^2.1.12",
+    "@feathersjs/authentication-jwt": "^2.0.6",
+    "@feathersjs/authentication-local": "^1.2.6",
     "@feathersjs/configuration": "^2.0.1",
     "@feathersjs/errors": "^3.3.1",
     "@feathersjs/express": "^1.2.4",
