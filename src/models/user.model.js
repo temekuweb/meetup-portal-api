@@ -7,15 +7,14 @@ module.exports = function(app) {
   const { Schema } = mongooseClient;
   var validateEmail = function(email) {
     var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    return re.test(email)
+    return re.test(email);
   };
   
   const user = new Schema(
     {
-    email:    {unique: [true, 'Email already exists'],
-    
+    email:    { unique: [true, 'Email already exists'],    
       type: String,  
-      Required:  'Email address cannot be left blank.',
+      Required:  [true, 'Email address cannot be left blank.'],
       validate: [ validateEmail, 'Please fill a valid email address'],
                   match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address'],
       },
