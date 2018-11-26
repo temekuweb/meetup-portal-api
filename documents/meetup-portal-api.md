@@ -1,4 +1,4 @@
-Meetup-Portal-API
+# Meetup-Portal-API
 Backend specifications v1
 Byron Coughlin
 Created Oct. 17, 2018
