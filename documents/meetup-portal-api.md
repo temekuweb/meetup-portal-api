@@ -1,8 +1,8 @@
 # Meetup-Portal-API
-Backend specifications v1
-Byron Coughlin
-Created Oct. 17, 2018
-Updated Oct. 25, 2018
+## Backend specifications v1
+## Byron Coughlin
+## Created Oct. 17, 2018
+## Updated Oct. 25, 2018
 Description
 Document specifications to create the backend for the Meetup-Portal_API backend. Describes the specifications for the first version. These include registration, login and profile. Generations of app, services and hooks are specified. Also framework and resources needed to create a full functioning backend. This document does not give specific code that needs to be written. But documents paramaters that are needed to communicate between different features and the frontend.
 
@@ -63,14 +63,14 @@ create [hashpassword()]
 
 service: users
 Params:
-    • email  unique valid format
-    • password
+    * • email  unique valid format
+    * • password
 
 creates new profile
  
 Returns
-    • 201 - Created
-    • 400 - Validation errors (password issue)
+    * • 201 - Created
+    * • 400 - Validation errors (password issue)
     • 409 - User exists
 
 Login
