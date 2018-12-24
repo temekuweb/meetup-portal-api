@@ -30,7 +30,7 @@ _Project Description_
 
 This is the first version of the meetup-portal website project. This version will consist of allowing interested people to register on the site. Capabilities to login arter registering. It will also allow users to create/view and edit their profile. These specifications are only for the backend. They are created while communicating with the frontend development team.
 
-Registration: Is the first step. It will consist of minimal fields for user to input. After user enters registration request and email will be sent to verify correct email. Upon user verifying email he/she will be taken to profile form.
+Registration: Is the first step. It will consist of minimal fields for user to input. After user enters registration request an email will be sent to verify correct email. Upon user verifying email he/she will be taken to profile form.
 
 Login: After a user has completed registering where they have created username and password, they will be able to login with those credentials.
 
