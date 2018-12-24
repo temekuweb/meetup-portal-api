@@ -8,7 +8,7 @@ Created Oct. 17, 2018
 
 Updated Oct. 25, 2018
 
-[Services](##Services)
+[Services](##Services##)
 
 [Models](##Models##)
 
@@ -170,12 +170,12 @@ Returns
 - 200 - Email sent
 - 400 - Email doesn’t exist
 
-## Database
+##Database
 
 Mongo
 Description: MongoDb is used to store persistant data. It is a light weight NoSql database that uses a document-oriented data model. . It has been choosen for its easy learning functionality and its looks very much like JSON. Mongoose will be used as a frontend to the Mongo database. Mongoose is an object modeling tool designed to work in an asynchronous enviroment. Instead of tables as used in a relational database, Mongo uses collections of documents.
 
-## Collections
+##Collections
 
 Name
 user
