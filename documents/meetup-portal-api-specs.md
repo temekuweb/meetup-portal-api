@@ -154,7 +154,7 @@ Fullname
       - Picture
       - Gravatar
 
-## hooks
+## Hooks
 Gravatar – Globaly reconized avatar
 
 - name: Gravatar
