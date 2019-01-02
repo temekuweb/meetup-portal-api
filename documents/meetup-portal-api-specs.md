@@ -2,7 +2,7 @@
 
 Backend specifications v1
 
-##Byron Coughlin
+Byron Coughlin
 
 Created Oct. 17, 2018
 
