@@ -112,7 +112,17 @@ entity service: users
 kind of service: mongoose
 connection string mongodb://localhost:27017/meetup_portal_api
 
-Services
+What we are going to create is a flow to have the user verify their email address. This goes as follows:
+
+The user creates an account on the feathers app
+The server adds a field isVerified to the user object in the database and sets it to false
+The server creates a verification token for the user
+The user gets sent an email containing a client link with the token as a parameter
+The user clicks the link and on visiting the client this token gets sent back to the server
+The server sets the isVerified field on the user object to true
+The user gets all the superpowers from your awesome application
+
+## Services
 UsersServices
 Automatically created when authentication is generated
 
@@ -122,7 +132,7 @@ name: profile
 path: /profile
 authenticate: yes
 
-Models
+## Models
 profile
 Model -
 Type: mongoose
@@ -144,7 +154,7 @@ Fullname
       - Picture
       - Gravatar
 
-hooks
+## hooks
 Gravatar – Globaly reconized avatar
 
 - name: Gravatar
